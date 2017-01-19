@@ -1,0 +1,179 @@
+[Files]
+File0=..\gui\Gui.java
+File1=..\listener\GuiListener.java
+File2=..\listener\ProcessEventListener.java
+File3=..\listener\SchedulerListener.java
+File4=..\Main.java
+File5=..\process\Burst.java
+File6=..\process\Process.java
+File7=AbstractScheduler.java
+File8=FirstComeFirstServe.java
+File9=RoundRobin.java
+File10=Scheduler.java
+File11=ShortestJobFirst.java
+File12=Statistics.java
+
+[Box:  - de.domenic.psv.gui.Gui]
+X=519
+Y=392
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=0
+FontSize=10
+FontName=MS Sans Serif
+
+[Box:  - de.domenic.psv.listener.GuiListener]
+X=108
+Y=419
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=0
+FontSize=10
+FontName=MS Sans Serif
+
+[Box:  - de.domenic.psv.listener.ProcessEventListener]
+X=1063
+Y=1127
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=0
+FontSize=10
+FontName=MS Sans Serif
+
+[Box:  - de.domenic.psv.listener.SchedulerListener]
+X=21
+Y=922
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=0
+FontSize=10
+FontName=MS Sans Serif
+
+[Box:  - de.domenic.psv.Main]
+X=72
+Y=625
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=0
+FontSize=10
+FontName=MS Sans Serif
+
+[Box:  - de.domenic.psv.process.Burst]
+X=1483
+Y=967
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=0
+FontSize=10
+FontName=MS Sans Serif
+
+[Box:  - de.domenic.psv.process.Process]
+X=1311
+Y=1260
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=0
+FontSize=10
+FontName=MS Sans Serif
+
+[Box:  - de.domenic.psv.scheduler.AbstractScheduler]
+X=570
+Y=1027
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=0
+FontSize=10
+FontName=MS Sans Serif
+
+[Box:  - de.domenic.psv.scheduler.FirstComeFirstServe]
+X=896
+Y=1536
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=0
+FontSize=10
+FontName=MS Sans Serif
+
+[Box:  - de.domenic.psv.scheduler.RoundRobin]
+X=571
+Y=1526
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=0
+FontSize=10
+FontName=MS Sans Serif
+
+[Box:  - de.domenic.psv.scheduler.Scheduler]
+X=1017
+Y=948
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=0
+FontSize=10
+FontName=MS Sans Serif
+
+[Box:  - de.domenic.psv.scheduler.ShortestJobFirst]
+X=235
+Y=1526
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=0
+FontSize=10
+FontName=MS Sans Serif
+
+[Box:  - de.domenic.psv.scheduler.Statistics]
+X=81
+Y=1196
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=0
+FontSize=10
+FontName=MS Sans Serif
+
+[Diagram]
+comments=0
+OffsetX=767
+OffsetY=0
+Visibility=4
+ShowParameter=4
+SortOrder=0
+ShowIcons=0
+ShowConnections=0
+Fontname=MS Sans Serif
+Fontsize=10
+ShowObjectDiagram=0
+
+[Connections]
+V0=de.domenic.psv.scheduler.AbstractScheduler#de.domenic.psv.process.Process#AssociationDirected#1##n#0#0#-1
+V1=de.domenic.psv.process.Process#de.domenic.psv.process.Burst#AssociationDirected#1##n#0#0#-1
+V2=de.domenic.psv.gui.Gui#de.domenic.psv.scheduler.AbstractScheduler#AssociationDirected####0#0#0
+V3=de.domenic.psv.gui.Gui#de.domenic.psv.listener.GuiListener#AssociationDirected####0#0#0
+V4=de.domenic.psv.Main#de.domenic.psv.listener.GuiListener#Implements####0#0#0
+V5=de.domenic.psv.Main#de.domenic.psv.listener.SchedulerListener#Implements####0#0#0
+V6=de.domenic.psv.Main#de.domenic.psv.scheduler.AbstractScheduler#AssociationDirected####0#0#0
+V7=de.domenic.psv.Main#de.domenic.psv.gui.Gui#AssociationDirected####0#0#0
+V8=de.domenic.psv.process.Process#de.domenic.psv.listener.ProcessEventListener#AssociationDirected####0#0#0
+V9=de.domenic.psv.scheduler.AbstractScheduler#de.domenic.psv.scheduler.Scheduler#Implements####0#0#0
+V10=de.domenic.psv.scheduler.AbstractScheduler#de.domenic.psv.listener.ProcessEventListener#Implements####0#0#0
+V11=de.domenic.psv.scheduler.AbstractScheduler#de.domenic.psv.listener.SchedulerListener#AssociationDirected####0#0#0
+V12=de.domenic.psv.scheduler.AbstractScheduler#de.domenic.psv.scheduler.Statistics#AssociationDirected####0#0#0
+V13=de.domenic.psv.scheduler.FirstComeFirstServe#de.domenic.psv.scheduler.AbstractScheduler#Inheritends####0#0#0
+V14=de.domenic.psv.scheduler.RoundRobin#de.domenic.psv.scheduler.AbstractScheduler#Inheritends####0#0#0
+V15=de.domenic.psv.scheduler.ShortestJobFirst#de.domenic.psv.scheduler.AbstractScheduler#Inheritends####0#0#0
+
+[Interactive]
+I0=
+
