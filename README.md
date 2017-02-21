@@ -3,3 +3,5 @@ This process visiualization program shall visually show how the common schedulin
 
 Greetings
 Domenic
+
+![Screenshot](screen.png)
